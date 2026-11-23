@@ -31,24 +31,7 @@ jupyter lab Projet.ipynb
 
 Dans Jupyter, choisir le noyau de cet environnement et exécuter les cellules dans l’ordre jusqu’à l’affichage de la précision de validation. Le premier lancement nécessite une connexion pour télécharger les images dans `data/`. La dernière cellule de matrice de confusion est un brouillon et peut être ignorée pour reproduire cette phase.
 
-## Organisation proposée pour la suite
 
-| Emplacement | Contenu |
-| --- | --- |
-| [Projet.ipynb](./Projet.ipynb) | Notebook en cours à la racine. Conserver ici la préparation des données et le premier modèle. |
-| `notebooks/` | Futurs essais, avec un numéro et une question précise. Par exemple, `02_analyse_erreurs.ipynb` pour identifier les expressions que le modèle confond. |
-| `src/` | Fonctions à extraire dès que deux notebooks réutilisent le même découpage, prétraitement ou calcul de métriques. |
-| `data/` | Images téléchargées localement. Le fichier `.gitignore` exclut déjà ce dossier et l’environnement `.venv/`. |
-| `results/` | Tableau comparatif des expériences et figures retenues pour le rapport. |
-
-Les chemins actuels du notebook sont relatifs à la racine du dépôt. Pour les futurs notebooks placés dans `notebooks/`, centraliser le chemin vers `data/` afin que tous utilisent les mêmes images et le même découpage.
-
-## Travailler en groupe sur GitHub
-
-1. Ouvrir une *issue* par question expérimentale, par exemple « Quelles expressions le modèle linéaire confond-il le plus souvent ? ». Y préciser le résultat attendu, ici une matrice de confusion sur la validation.
-2. Attribuer l’essai à une personne et travailler sur une branche courte, par exemple `exp/analyse-erreurs`. Éviter les modifications simultanées d’un même notebook pour faciliter la fusion.
-3. Terminer chaque notebook par les paramètres utilisés, le score de validation et une courte conclusion. Reporter les résultats dans un tableau commun avec un lien vers le notebook correspondant.
-4. Ouvrir une *pull request* et demander à un autre membre de relancer le notebook avant la fusion dans `main` (ou la branche principale du dépôt).
 
 ## Équipe
 
