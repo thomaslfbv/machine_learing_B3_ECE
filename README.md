@@ -2,7 +2,7 @@
 
 Projet de machine learning de B3 à l’ECE. À partir d’un portrait en niveaux de gris, le modèle cherche à prédire l’une des sept catégories d’expression du jeu de données [FER2013](https://www.kaggle.com/datasets/msambare/fer2013).
 
-Le projet en est à sa **première phase d’expérimentation**. Le groupe complète le [notebook initial](./Projet.ipynb) avant d’ajouter d’autres notebooks. Le premier modèle sert de point de comparaison pour les essais à venir.
+Le projet en est à sa **première phase d’expérimentation**. Le groupe complète le [notebook initial](./notebooks/01_Test_Brut_NO_PCA.ipynb) avant d’ajouter d’autres notebooks. Le premier modèle sert de point de comparaison pour les essais à venir.
 
 ## Première expérience
 
