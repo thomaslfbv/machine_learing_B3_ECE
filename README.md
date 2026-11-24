@@ -26,7 +26,7 @@ Depuis la racine du dépôt, dans un terminal macOS ou Linux, préparer l’envi
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install jupyterlab kagglehub torch torchvision scikit-learn
-jupyter lab Projet.ipynb
+jupyter lab ## Le nom du notebook à ouvrir
 ```
 
 Dans Jupyter, choisir le noyau de cet environnement et exécuter les cellules dans l’ordre jusqu’à l’affichage de la précision de validation. Le premier lancement nécessite une connexion pour télécharger les images dans `data/`. La dernière cellule de matrice de confusion est un brouillon et peut être ignorée pour reproduire cette phase.
